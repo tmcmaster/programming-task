@@ -132,3 +132,20 @@ cat programming-task-example-data.log |awk '{print $1}' |sort |uniq -c |sort -rn
 72.44.32.10
 50.112.00.11
 ```
+
+## Results from the LogAnalysis library
+
+```bash
+Unique IP List:  177.71.128.21, 168.41.191.40, 168.41.191.41, 168.41.191.9, 168.41.191.34, 50.112.00.28, 50.112.00.11, 72.44.32.11, 72.44.32.10, 168.41.191.43, 79.125.00.21
+     Top 3 IPs:  168.41.191.40, 177.71.128.21, 50.112.00.11
+    Top 3 URLs:  /faq/, /docs/manage-websites/, /intranet-analytics/
+```
+
+### Final Thoughts
+
+The following are thoughts regarding the difference I got between the Bash commands and the LogAnalyser library.
+
+- There Unique IP list was the same, which was not surprising if my RegEx was tested properly.
+- The top three IP numbers were the same for the first 2, but differed because there are multiple 3rd ranking.
+  - I would suggest that the bash script sort, and the Javascript hash and then sort, have ended up with different orders.
+- The top tree URLs also have a different third item with the bash commands, and I suggest that this is also due to what happened with the IP top three.
