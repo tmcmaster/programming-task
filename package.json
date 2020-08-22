@@ -1,0 +1,16 @@
+{
+  "name": "log-parser",
+  "version": "1.0.0",
+  "description": "Parse a given log file",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "main": "node main.js programming-task-example-data.log"
+  },
+  "author": "Tim McMaster",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  }
+}
